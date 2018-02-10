@@ -1,4 +1,5 @@
 ﻿using System;
+using LogManager;
 
 namespace LogDemo
 {
@@ -6,7 +7,10 @@ namespace LogDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ILogManager logManager = new LogManager.LogManager();
+            logManager.LogInfo("Hello Seri!");
+
+            Console.ReadLine();
         }
     }
 }

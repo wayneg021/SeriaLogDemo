@@ -25,5 +25,15 @@ namespace LogManager
         {
             _logger.Information(message);
         }
+
+        public void LogFatal(Exception ex, string message)
+        {
+            _logger.Fatal(ex, message);
+        }
+
+        public void LogError(string error)
+        {
+            _logger.Error(error);
+        }
     }
 }

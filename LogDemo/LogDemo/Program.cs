@@ -9,6 +9,8 @@ namespace LogDemo
         {
             ILogManager logManager = new LogManager.LogManager();
             logManager.LogInfo("Hello Seri!");
+            logManager.LogError("Test Error");
+            logManager.LogInfo("One more");
 
             Console.ReadLine();
         }
